@@ -5,22 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+ <style>
+      h1 {
+        color: white;
+        font-size: 50px;
+        background-color: gradient(to right, #255, 0, 0);
+        height: 100px;
+        width: 500px;
+        text-align: center;
+      }
+    </style>
 </head>
 
 <body>
 
     <!-- Header -->
-    <header>
-        <h1>My Portfolio Website</h1>
-
+    <div class="header">
+        <h1 class="logo">My Portfolio Website</h1>
+    </div>
+    <header class="main-header">
         <!-- Navbar -->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav id="nav" class="navbar">
+            <ul class="nav-list">
+
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,46 +46,52 @@
     <main>
 
         <!-- Home Section -->
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to my portfolio website.</p>
+        <section class="home-section" id="home">
+            <h2 class="section-title">Home</h2>
+            <p id="well">Welcome to my portfolio website.</p>
 
             <!-- Audio -->
-            <audio controls>
+           <div id="sound"> <audio controls>
                 <source src="assets/audio.mp3" type="audio/mpeg">
-                Your browser does not support audio.
             </audio>
+            </div>
         </section>
 
         <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
+        <section class="about-section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <p id="learn">
                 I am learning HTML and building my first portfolio website.
             </p>
 
             <!-- List -->
-            <h3>Skills</h3>
+            <div id="skill">
+                <h3>Skills</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Git & GitHub</li>
             </ul>
+            </div>
         </section>
 
         <!-- Work Section -->
-        <section id="work">
-            <h2>My Work</h2>
+        <section class="work-section" id="work">
+            <h2 class="section-title">My Work</h2>
 
             <!-- Video -->
-            <video width="400" controls>
+           <div id="video">
+            <video width="400"
+                height="250" controls>
                 <source src="assets/video.mp4" type="video/mp4">
             </video>
+            </div>
 
             <!-- Table -->
-            <h3>Projects Table</h3>
-
-            <table border="1">
+            <h3 id="pt">Projects Table</h3>
+<div id="tab">
+            <table border="2">
+                
                 <tr>
                     <th>Project Name</th>
                     <th>Year</th>
@@ -84,15 +107,16 @@
                     <td>2026</td>
                 </tr>
             </table>
+            </div>
         </section>
 
         <!-- Resume Section -->
-        <section id="resume">
-            <h2>Resume</h2>
+        <section class="resume-section" id="resume">
+            <h2 class="section-title">Resume</h2>
 
-            <p>
+            <p id="move">
                 I am a beginner web developer learning front-end development.
-               <br> Click here to download my resume
+               <br> Click here to view my resume
                <br>
                 <a href="assets/resume.pdf" target="_blank">View My Resume</a>
 </section>
@@ -101,28 +125,21 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
 
             <!-- HTML Form -->
-            <form>
+            <form class="contact-form">
 
-                <label>Name:</label>
-                <br>
-                <input type="text" placeholder="Enter your name">
-                <br><br>
-
-                <label>Email:</label>
-                <br>
-                <input type="email" placeholder="Enter your email">
-                <br><br>
-
-                <label>Message:</label>
-                <br>
-                <textarea cols="30" rows="5"></textarea>
-                <br><br>
-
-                <button type="submit">Send</button>
+                <input class="input-field" type="text" placeholder="Name">
+<br>
+        <input class="input-field" type="email" placeholder="Email">
+<br>
+        <textarea class="message-box" type="text" placeholder="Message"></textarea>
+<br>
+        <button class="submit-btn" type="submit">
+            Send
+        </button>
 
             </form>
         </section>
@@ -130,8 +147,8 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2026 My Portfolio. All rights reserved.</p>
+    <footer class="main-footer">
+        <p class="footer-text">© 2026 My Portfolio. All rights reserved.</p>
     </footer>
 
 </body>

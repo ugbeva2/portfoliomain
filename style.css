@@ -1,7 +1,63 @@
 nav ul li {
     display: inline;
     margin-right: 20px;
+    text-align: center;
 }
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: burlywood;
+}
+.section-title{
+    color: blue;
+    text-align: center;
+}
+#nav{
+    text-align: center;
+}
+#pt{
+    color: rgb(44, 21, 217);
+    text-align: center;
+}
+#tab{
+    padding-left: 45%;
+}
+
+#well{
+    text-align: center;
+}
+#sound{
+    text-align: center;
+    justify-content: center
+}
+#learn{
+    text-align:center;
+}
+#skill h3{
+    text-align: center;
+}
+
+#skill ul {
+    padding-left: 45%;
+}
+
+#move{
+    text-align: center;
+}
+.contact-form{
+    text-align: center;
+}
+#video{
+    text-align: center;
+}
+#title{
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+.footer-text{
+    text-align: center;
 }
